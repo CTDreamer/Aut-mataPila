@@ -1,6 +1,7 @@
 # Automata a Pila 🚀
 
 Grupo: Lycenciados Corruptos
+
 📌 Descripción:
 Este proyecto implementa un Autómata a Pila (AP) para reconocer un lenguaje específico basado en las reglas de apilado y desapilado. Se desarrolla en Python utilizando estructuras de pila para validar la aceptación de cadenas según su gramática.
 
