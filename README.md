@@ -40,6 +40,7 @@ Este proyecto implementa un Autómata a Pila (AP) para reconocer un lenguaje esp
 
 
 📌 Tecnologías Utilizadas
+
 🔹 Lenguaje: Python 🐍
 
 🔹 Conceptos: Teoría de autómatas, autómatas a pila, lenguajes libres de contexto
