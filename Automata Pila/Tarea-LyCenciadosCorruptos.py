@@ -1,31 +1,37 @@
+# Grupo: LyCenciados Corruptos
+# Este código implementa un Autómata a Pila (AP) que verifica si una cadena
+# pertenece a un lenguaje específico basado en las reglas de apilado y desapilado.
+# Utiliza dos pilas para controlar la correspondencia entre los símbolos.
+
 class AutomataPila:
     def __init__(self):
-        self.pila_a = []  # Para manejar 'a' y 'c'
-        self.pila_b = []  # Para manejar 'b' y 'd'
+        self.pila_1 = []  # Pila para manejar los símbolos 'a' y 'c'
+        self.pila_2 = []  # Pila para manejar los símbolos 'b' y 'd'
 
     def procesar_cadena(self, cadena):
         for simbolo in cadena:
             if simbolo == 'a':
-                self.pila_a.append('a')  # Apilar 'a'
+                self.pila_1.append('a')  # Apilar 'a' en pila_1
             elif simbolo == 'b':
-                self.pila_b.append('b')  # Apilar 'b'
+                self.pila_2.append('b')  # Apilar 'b' en pila_2
             elif simbolo == 'c':
-                if self.pila_a:
-                    self.pila_a.pop()  # Desapilar 'a'
+                if self.pila_1:
+                    self.pila_1.pop()  # Desapilar 'a' si existe en pila_1
                 else:
-                    return False  # Error: No hay 'a' para desapilar
+                    return False  # Error: no hay 'a' para desapilar
             elif simbolo == 'd':
-                if self.pila_b:
-                    self.pila_b.pop()  # Desapilar 'b'
+                if self.pila_2:
+                    self.pila_2.pop()  # Desapilar 'b' si existe en pila_2
                 else:
-                    return False  # Error: No hay 'b' para desapilar
+                    return False  # Error: no hay 'b' para desapilar
             else:
-                return False  # Simbolo no válido
+                return False  # Error: símbolo no válido
 
-        return len(self.pila_a) == 0 and len(self.pila_b) == 0  # Acepta si ambas pilas están vacías
+        # Acepta la cadena si ambas pilas están vacías al finalizar
+        return len(self.pila_1) == 0 and len(self.pila_2) == 0  
 
 if __name__ == "__main__":
     automata = AutomataPila()
-    cadena = input("Ingrese una cadena: ")  # Permitir entrada desde la terminal
+    cadena = input("Ingrese una cadena: ")  # Solicita cadena desde la terminal
     resultado = automata.procesar_cadena(cadena)
-    print("Cadena aceptada" if resultado else "Cadena rechazada")
+    print("Cadena pertenece al lenguaje" if resultado else "Cadena rechazada, no pertenece al lenguaje")
