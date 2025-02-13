@@ -1,18 +1,18 @@
 # Automata a Pila 🚀
 
-Grupo: Lycenciados Corruptos
+📝 Grupo: LyCenciados Corruptos 🎭
 
-Integrantes:
+👥 Integrantes:
 
-Bayes Enriquez Eva María Florisa
+📊 Bayes Enriquez Eva María Florisa
 
-Gonzales Mendieta Claudio Camilo
+🔬 Gonzales Mendieta Claudio Camilo
 
-Melendez Blas Jhair Roussell
+💻 Melendez Blas Jhair Roussell
 
-Pacotaype Chuchon, Diego Alonzo
+🔢 Pacotaype Chuchon, Diego Alonzo
 
-Torres Tineo Cristhian Anthony
+🚀 Torres Tineo Cristhian Anthony
 
 📌 Descripción:
 Este proyecto implementa un Autómata a Pila (AP) para reconocer un lenguaje específico basado en las reglas de apilado y desapilado. Se desarrolla en Python utilizando estructuras de pila para validar la aceptación de cadenas según su gramática.
