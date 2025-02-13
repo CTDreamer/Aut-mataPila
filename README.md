@@ -17,6 +17,7 @@ Este proyecto implementa un Autómata a Pila (AP) para reconocer un lenguaje esp
 
 
 📌 Funcionamiento del Programa
+
 1️⃣ El usuario ingresa una cadena.
 
 2️⃣ El autómata procesa la cadena utilizando dos pilas para manejar las reglas de apilado y desapilado.
